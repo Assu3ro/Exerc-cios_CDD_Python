@@ -7,13 +7,15 @@ if combustivel == "G" or combustivel == "g":
     combustivel = 5.80
 
     total = (combustivel * litros)
+    print(combustivel,"*",5.8)
     print("O valor de gasolina total deu: R$", total)
 
-elif combustivel == "E" or combustivel == "e":
+elif combustivel in "Ee":
 
     combustivel = 4.80
     total = (combustivel * litros)
-    print("O valor total de etanol deu: R$", total)
+    print(combustivel,"*",litros, "=", total)
+    print("\nO valor total de etanol deu: R$", total)
 
 else:
-    print("Operação incorreta! \n(Letra diferente ou número incorrerto)")
+    print("\nOperação incorreta! \n(Letra diferente ou número incorrerto)")
